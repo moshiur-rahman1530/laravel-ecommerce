@@ -22,13 +22,13 @@ use App\Models\Cart;
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('css/Template.css')}}" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('css/toastr.css')}}" rel="stylesheet"/>
+    <link href="{{secure_asset('css/Template.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/toastr.css')}}" rel="stylesheet"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
@@ -336,8 +336,8 @@ use App\Models\Cart;
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{secure_asset('lib/easing/easing.min.js')}}"></script>
+    <script src="{{secure_asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Contact Javascript File -->
     <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
@@ -345,10 +345,10 @@ use App\Models\Cart;
 
     <!-- Template Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
-    <script src="{{asset('js/main.js')}}"></script>
-    <script src="{{asset('js/custom.js')}}"></script>
-    <script src="{{asset('js/toastr.js')}}"></script>
-    <script src="{{asset('js/axios.min.js')}}"></script>
+    <script src="{{secure_asset('js/main.js')}}"></script>
+    <script src="{{secure_asset('js/custom.js')}}"></script>
+    <script src="{{secure_asset('js/toastr.js')}}"></script>
+    <script src="{{secure_asset('js/axios.min.js')}}"></script>
     <script> totalCountCart();</script>
 
 
