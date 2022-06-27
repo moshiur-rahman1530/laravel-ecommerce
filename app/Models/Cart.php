@@ -15,7 +15,7 @@ class Cart extends Model
     public $keyType='int';
     public  $timestamps=false;
 
-    public function TotalCart($id)
+    public static function TotalCart($id)
     {
       $result = Cart::where('user_id',$id)->count();
       return $result;
