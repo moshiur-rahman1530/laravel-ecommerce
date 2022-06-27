@@ -22,10 +22,11 @@ class UserController extends Controller
       $allProduct= Product::all();
       $latestProduct= Product::orderBy('id','desc')->get();
 
-      $data = DB::table('categories')->leftjoin('products', 'categories.id','=','products.product_cat')-> get();
+      // $data = DB::table('categories')->leftjoin('products', 'categories.id','=','products.product_cat')-> get();
       // return $category;
 
-      return view('home', ['category'=>$category, 'data'=>$data,'allProduct'=>$allProduct, 'newArive'=>$latestProduct,'subcat'=>$subcat]);
+      return view('home', ['category'=>$category,'allProduct'=>$allProduct, 'newArive'=>$latestProduct,'subcat'=>$subcat]);
+      // return view('home', ['category'=>$category, 'data'=>$data,'allProduct'=>$allProduct, 'newArive'=>$latestProduct,'subcat'=>$subcat]);
     }
 
     // public function getProductByCategory(Request $req)
